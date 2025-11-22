@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/README.md",
+                "file": "linux/git.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "git"
             }
           }
         ]
@@ -180,11 +180,32 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "6ea9bf4f73c39bfa",
+  "active": "fc993898698480f2",
   "lastOpenFiles": [
+    "pyton/python-guide-ru/examples/run_demo.py",
+    "pyton/python-guide-ru/examples/package/utils.py",
+    "pyton/python-guide-ru/examples/package/__init__.py",
+    "pyton/python-guide-ru/examples/package",
+    "pyton/python-guide-ru/examples/hello.py",
+    "pyton/python-guide-ru/examples",
+    "pyton/python-guide-ru/05-resources.md",
+    "pyton/python-guide-ru/04-workflows.md",
+    "pyton/python-guide-ru/03-tools.md",
+    "pyton/python-guide-ru/02-environment.md",
+    "pyton/python-guide-ru/01-basics.md",
+    "pyton/python-guide-ru/README.md",
+    "pyton/python-guide-ru",
+    "pyton/python-guide/05-resources.md",
+    "pyton/python-guide/04-workflows.md",
+    "pyton/python-guide/03-tools.md",
+    "pyton/python-guide/02-environment.md",
+    "pyton/python-guide/01-basics.md",
+    "pyton/python-guide/README.md",
+    "pyton/python-guide",
+    "pyton",
+    "linux/README.md",
     "linux/formatting.md",
     "linux/networking.md",
-    "linux/README.md",
     "linux/git.md",
     "linux/scp.md",
     "linux/grep.md",
@@ -196,20 +217,6 @@
     "templates/link.md",
     "linux/ssh-keygen.md",
     "templates",
-    "linux/Добро пожаловать.md",
-    "grep.md",
-    "templates/uni.md",
-    "linux/uni 1.md",
-    "templates/linux_command.md",
-    "Без названия.base",
-    "test.md",
-    "linux/Новый текстовый документ.txt",
-    "templates/Новый текстовый документ.txt",
-    "sql",
-    "Новая папка",
-    "pt",
-    "linux",
-    "templates",
-    "at"
+    "Без названия.base"
   ]
 }
