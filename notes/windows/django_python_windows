@@ -1,0 +1,171 @@
+````markdown
+# Шпаргалка: установка Django на Windows 10 и создание первого проекта
+
+#djabango #python #windows #venv
+## 0. Что нужно заранее
+
+1. Установить **Python 3.x** (с галочкой **“Add python.exe to PATH”**).
+2. Открыть **Командную строку (cmd)** или **PowerShell**.
+
+Проверка:
+
+```bat
+python --version
+pip --version
+````
+
+---
+
+## 1. Папка для проектов Django
+
+```bat
+cd %USERPROFILE%\Documents
+mkdir django
+cd django
+```
+
+---
+
+## 2. Создаём папку проекта и виртуальное окружение
+
+```bat
+mkdir project1
+cd project1
+```
+
+Создаём виртуальную среду **venv**:
+
+```bat
+py -m venv venv
+```
+
+Структура:
+
+```text
+project1\
+    venv\
+```
+
+Активируем окружение:
+
+### cmd
+
+```bat
+venv\Scripts\activate.bat
+```
+
+### PowerShell
+
+```powershell
+venv\Scripts\Activate.ps1
+```
+
+В начале строки должно появиться `(venv)`.
+
+---
+
+## 3. Устанавливаем Django в виртуальную среду
+
+```bat
+python -m pip install --upgrade pip
+pip install django
+```
+
+Проверяем:
+
+```bat
+python -m django --version
+```
+
+---
+
+## 4. Создаём Django-проект в текущей папке
+
+Мы находимся в:
+
+```text
+…\Documents\django\project1
+```
+
+Команда:
+
+```bat
+python -m django startproject config .
+```
+
+> Важно: точка `.` в конце — создаёт файлы проекта в текущей папке.
+
+Теперь структура:
+
+```text
+project1\
+    venv\          ← виртуальная среда
+    manage.py
+    config\        ← настройки проекта (settings.py, urls.py, etc.)
+```
+
+---
+
+## 5. Первые команды Django
+
+### 5.1. Миграции
+
+```bat
+python manage.py migrate
+```
+
+### 5.2. Запуск сервера
+
+```bat
+python manage.py runserver 8000
+```
+
+или, если нужен другой порт:
+
+```bat
+python manage.py runserver 8001
+```
+
+Открыть в браузере:
+
+```text
+http://127.0.0.1:8000/
+```
+
+Остановить сервер: `Ctrl + C`.
+
+---
+
+## 6. Как открывать проект в следующий раз
+
+Каждый раз:
+
+```bat
+cd %USERPROFILE%\Documents\django\project1
+venv\Scripts\activate.bat
+python manage.py runserver 8000
+```
+
+---
+
+## 7. Мини-чек-лист «с нуля до страницы в браузере»
+
+1. Установить Python (с *Add to PATH*).
+2. `cd %USERPROFILE%\Documents`
+3. `mkdir django && cd django`
+4. `mkdir project1 && cd project1`
+5. `py -m venv venv`
+6. `venv\Scripts\activate.bat`
+7. `pip install django`
+8. `python -m django startproject config .`
+9. `python manage.py migrate`
+10. `python manage.py runserver 8000`
+11. Открыть `http://127.0.0.1:8000/`.
+
+Готово: локальный сайт на Django работает 🎉
+
+```
+
+Если хочешь, дальше могу сделать отдельную шпаргалку «как развернуть такой же проект на сервере s1.viktorplus.com (Linux)» с тем же стилем `project1/venv/config`.
+::contentReference[oaicite:0]{index=0}
+```
