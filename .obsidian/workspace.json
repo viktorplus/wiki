@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/git.md",
+                "file": "pyton/python-guide-ru/01-basics.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "git"
+              "title": "01-basics"
             }
           }
         ]
@@ -180,33 +180,35 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "fc993898698480f2",
+  "active": "6ea9bf4f73c39bfa",
   "lastOpenFiles": [
-    "pyton/python-guide-ru/examples/run_demo.py",
-    "pyton/python-guide-ru/examples/package/utils.py",
-    "pyton/python-guide-ru/examples/package/__init__.py",
-    "pyton/python-guide-ru/examples/package",
-    "pyton/python-guide-ru/examples/hello.py",
-    "pyton/python-guide-ru/examples",
-    "pyton/python-guide-ru/05-resources.md",
+    "notes/linux/jango_python_debian_ubuntu",
+    "notes/python/jango_python_debian_ubuntu",
+    "notes/python/jango_python_",
+    "notes/python",
+    "notes/linux",
+    "notes/internet",
+    "notes/Internet",
+    "notes/Pyton",
+    "notes/Linux",
+    "notes/Новая папка",
+    "notes",
+    "pyton/python-guide-ru/02-environment.md",
     "pyton/python-guide-ru/04-workflows.md",
     "pyton/python-guide-ru/03-tools.md",
-    "pyton/python-guide-ru/02-environment.md",
+    "pyton/python-guide-ru/05-resources.md",
     "pyton/python-guide-ru/01-basics.md",
     "pyton/python-guide-ru/README.md",
-    "pyton/python-guide-ru",
+    "linux/git.md",
     "pyton/python-guide/05-resources.md",
     "pyton/python-guide/04-workflows.md",
     "pyton/python-guide/03-tools.md",
     "pyton/python-guide/02-environment.md",
     "pyton/python-guide/01-basics.md",
     "pyton/python-guide/README.md",
-    "pyton/python-guide",
-    "pyton",
     "linux/README.md",
     "linux/formatting.md",
     "linux/networking.md",
-    "linux/git.md",
     "linux/scp.md",
     "linux/grep.md",
     "linux/locate.md",
@@ -215,8 +217,6 @@
     "linux/ps.md",
     "linux/awk.md",
     "templates/link.md",
-    "linux/ssh-keygen.md",
-    "templates",
-    "Без названия.base"
+    "linux/ssh-keygen.md"
   ]
 }
