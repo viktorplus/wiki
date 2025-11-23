@@ -1,243 +1,268 @@
 ````markdown
-# Шпаргалка: установка Django на Windows 10 и создание первого проекта
+# Django на Windows 10 с готовым HTML-шаблоном  
+(вариант с активацией `venv` как у нас сейчас)
 
-#djabango #python #windows #venv
-## 0. Что нужно заранее
+Итоговая структура:
+
+```text
+C:\Users\cp24\Documents\django\project1\
+    venv\               ← виртуальная среда
+    manage.py
+    db.sqlite3
+    config\             ← настройки проекта
+    main\               ← приложение
+    templates\
+        home.html       ← шаблон главной страницы
+````
+
+---
+
+## 0. Подготовка
 
 1. Установить **Python 3.x** (с галочкой **“Add python.exe to PATH”**).
-2. Открыть **Командную строку (cmd)** или **PowerShell**.
+    
+2. Открыть **Командную строку (cmd)**.
+    
 
 Проверка:
 
 ```bat
 python --version
 pip --version
-````
+```
 
 ---
 
-## 1. Папка для проектов Django
+## 1. Папка для проектов и проекта
 
 ```bat
 cd %USERPROFILE%\Documents
 mkdir django
 cd django
-```
-
----
-
-## 2. Создаём папку проекта и виртуальное окружение
-
-```bat
 mkdir project1
 cd project1
 ```
 
-Создаём виртуальную среду **venv**:
+---
+
+## 2. Создаём и активируем виртуальную среду `venv`, ставим Django
+
+### 2.1. Создаём venv
 
 ```bat
 py -m venv venv
 ```
 
-Структура:
-
-```text
-project1\
-    venv\
-```
-
-Активируем окружение:
-
-### cmd
+### 2.2. Активируем venv
 
 ```bat
 venv\Scripts\activate.bat
 ```
 
-### PowerShell
+> Если всё ок — в начале строки появится префикс:  
+> `(venv) C:\Users\...\project1>`
 
-```powershell
-venv\Scripts\Activate.ps1
-```
-
-В начале строки должно появиться `(venv)`.
-
----
-
-## 3. Устанавливаем Django в виртуальную среду
+### 2.3. Ставим Django внутри активированного venv
 
 ```bat
-python -m pip install --upgrade pip
+pip install --upgrade pip
 pip install django
-```
-
-Проверяем:
-
-```bat
-python -m django --version
+python -m django --version   :: проверка
 ```
 
 ---
 
-## 4. Создаём Django-проект в текущей папке
-
-Мы находимся в:
-
-```text
-…\Documents\django\project1
-```
-
-Команда:
+## 3. Создаём Django-проект
 
 ```bat
 python -m django startproject config .
 ```
 
-> Важно: точка `.` в конце — создаёт файлы проекта в текущей папке.
-
-Теперь структура:
+Получится:
 
 ```text
 project1\
-    venv\          ← виртуальная среда
+    venv\
     manage.py
-    config\        ← настройки проекта (settings.py, urls.py, etc.)
+    config\
 ```
 
 ---
 
-## 5. Первые команды Django
+## 4. Создаём приложение `main`
 
-### 5.1. Миграции
+```bat
+python manage.py startapp main
+```
+
+---
+
+## 5. Регистрируем приложение `main`
+
+Открыть файл:
+
+```text
+C:\Users\cp24\Documents\django\project1\config\settings.py
+```
+
+Найти `INSTALLED_APPS` и добавить `'main',`:
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    'main',  # наше приложение
+]
+```
+
+Сохранить.
+
+---
+
+## 6. Подключаем папку `templates` и создаём `home.html`
+
+### 6.1. Создаём папку `templates` и файл шаблона
+
+В `C:\Users\cp24\Documents\django\project1` создать папку:
+
+```text
+templates
+```
+
+Внутри — файл:
+
+```text
+C:\Users\cp24\Documents\django\project1\templates\home.html
+```
+
+Содержимое `home.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой первый сайт на Django</title>
+</head>
+<body>
+    <h1>Привет, Виктор!</h1>
+    <p>Эта страница отдается через шаблон <code>home.html</code>.</p>
+</body>
+</html>
+```
+
+### 6.2. Настраиваем поиск шаблонов в `settings.py`
+
+В `config\settings.py` найти блок `TEMPLATES` и указать папку `templates`:
+
+```python
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'templates'],  # ← наша папка с шаблонами
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+```
+
+Сохранить.
+
+---
+
+## 7. View, которая рендерит шаблон
+
+Открыть:
+
+```text
+C:\Users\cp24\Documents\django\project1\main\views.py
+```
+
+Сделать так:
+
+```python
+from django.shortcuts import render
+
+
+def home(request):
+    return render(request, 'home.html')
+```
+
+Сохранить.
+
+---
+
+## 8. Маршрут для главной страницы
+
+Открыть:
+
+```text
+C:\Users\cp24\Documents\django\project1\config\urls.py
+```
+
+Содержимое:
+
+```python
+from django.contrib import admin
+from django.urls import path
+from main.views import home
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', home, name='home'),  # главная страница
+]
+```
+
+Сохранить.
+
+---
+
+## 9. Миграции и запуск сервера
+
+Всё ещё в активном venv `(venv)`:
 
 ```bat
 python manage.py migrate
-```
-
-### 5.2. Запуск сервера
-
-```bat
-python manage.py runserver 8000
-```
-
-или, если нужен другой порт:
-
-```bat
 python manage.py runserver 8001
 ```
 
 Открыть в браузере:
 
 ```text
-http://127.0.0.1:8000/
+http://127.0.0.1:8001/
 ```
 
-Остановить сервер: `Ctrl + C`.
+Появится страница из `home.html`.
 
 ---
 
-## 6. Как открывать проект в следующий раз
+## 10. Как запускать проект потом (краткая версия)
 
 Каждый раз:
 
 ```bat
 cd %USERPROFILE%\Documents\django\project1
 venv\Scripts\activate.bat
-python manage.py runserver 8000
+python manage.py runserver 8001
 ```
 
 ---
 
-## 7. Мини-чек-лист «с нуля до страницы в браузере»
+## Теги
 
-1. Установить Python (с *Add to PATH*).
-2. `cd %USERPROFILE%\Documents`
-3. `mkdir django && cd django`
-4. `mkdir project1 && cd project1`
-5. `py -m venv venv`
-6. `venv\Scripts\activate.bat`
-7. `pip install django`
-8. `python -m django startproject config .`
-9. `python manage.py migrate`
-10. `python manage.py runserver 8000`
-11. Открыть `http://127.0.0.1:8000/`.
-
-Готово: локальный сайт на Django работает 🎉
-
-```
-
-Если хочешь, дальше могу сделать отдельную шпаргалку «как развернуть такой же проект на сервере s1.viktorplus.com (Linux)» с тем же стилем `project1/venv/config`.
-
-````markdown
----
-# Шпаргалка: как запустить мой Django-проект каждый раз
-    
-Проект лежит тут:
-
-```text
-C:\Users\cp24\Documents\django\project1
-````
-
-Виртуальная среда: `venv`
-Django-проект: `manage.py`, папка `config`
-
----
-
-## Каждый запуск (утром / после перезагрузки)
-
-1. Открыть **Командную строку (cmd)**.
-
-2. Перейти в папку проекта:
-
-   ```bat
-   cd C:\Users\cp24\Documents\django\project1
-   ```
-
-3. Активировать виртуальное окружение:
-
-   ```bat
-   venv\Scripts\activate.bat
-   ```
-
-   > Если всё ок — в начале строки появится `(venv)`.
-
-4. (Необязательно, но можно) проверить, что Django на месте:
-
-   ```bat
-   python -m django --version
-   ```
-
-5. Запустить сервер разработки:
-
-   ```bat
-   python manage.py runserver 8001
-   ```
-
-6. Открыть в браузере:
-
-   ```text
-   http://127.0.0.1:8001/
-   ```
-
----
-
-## Как остановить сервер
-
-В окне cmd, где он работает, нажать:
-
-```text
-Ctrl + C
-```
-
----
-
-## Как выйти из виртуальной среды
-
-После работы (не обязательно, но можно):
-
-```bat
-deactivate
-```
+#django #python #windows10 #venv #webdev 
 
 ```
 ::contentReference[oaicite:0]{index=0}

@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pyton/python-guide-ru/01-basics.md",
+                "file": "notes/windows/django_python_windows.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "django_python_windows"
+            }
+          },
+          {
+            "id": "2e2468e1f4d442b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/wsl/django_notes_locate.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-basics"
+              "title": "django_notes_locate"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,8 +195,20 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "6ea9bf4f73c39bfa",
+  "active": "2e2468e1f4d442b9",
   "lastOpenFiles": [
+    "notes/wsl/django_notes.md",
+    "notes/wsl/django_notes_locate.md",
+    "notes/wsl",
+    "notes/windows/django_notes_windows_wsl_locate.md",
+    "notes/windows/django_notes_windows.md",
+    "notes/windows/django_python_windows.md",
+    "linux/README.md",
+    "linux/bash/cron-jobs.md",
+    "notes/linux/django_python_debian_ubuntu.md",
+    "pyton/python-guide-ru/README.md",
+    "linux/git.md",
+    "pyton/python-guide-ru/01-basics.md",
     "notes/linux/jango_python_debian_ubuntu",
     "notes/python/jango_python_debian_ubuntu",
     "notes/python/jango_python_",
@@ -191,32 +218,20 @@
     "notes/Internet",
     "notes/Pyton",
     "notes/Linux",
-    "notes/Новая папка",
-    "notes",
     "pyton/python-guide-ru/02-environment.md",
     "pyton/python-guide-ru/04-workflows.md",
     "pyton/python-guide-ru/03-tools.md",
     "pyton/python-guide-ru/05-resources.md",
-    "pyton/python-guide-ru/01-basics.md",
-    "pyton/python-guide-ru/README.md",
-    "linux/git.md",
     "pyton/python-guide/05-resources.md",
     "pyton/python-guide/04-workflows.md",
     "pyton/python-guide/03-tools.md",
     "pyton/python-guide/02-environment.md",
     "pyton/python-guide/01-basics.md",
     "pyton/python-guide/README.md",
-    "linux/README.md",
     "linux/formatting.md",
     "linux/networking.md",
     "linux/scp.md",
     "linux/grep.md",
-    "linux/locate.md",
-    "linux/bash/cron-jobs.md",
-    "linux/sed.md",
-    "linux/ps.md",
-    "linux/awk.md",
-    "templates/link.md",
-    "linux/ssh-keygen.md"
+    "linux/locate.md"
   ]
 }
