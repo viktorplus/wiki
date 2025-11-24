@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/git/git_stash.md",
+                "file": "linux/git/git_fetch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "git_stash"
+              "title": "git_fetch"
             }
           }
         ],
@@ -195,14 +195,19 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "fc993898698480f2",
+  "active": "2e2468e1f4d442b9",
   "lastOpenFiles": [
-    "linux/git",
-    "linux/git/git_ext.md",
-    "linux/git/git_stash.md",
-    "linux/git/git_checkout.md",
     "linux/git/git.md",
+    "linux/git/git_fetch.md",
+    "linux/git/git_push.md",
+    "linux/git/git_commit.md",
+    "linux/git/git_stash.md",
     "linux/git/gitignore.md",
+    "linux/git/git_pull.md",
+    "linux/git/git_ext.md",
+    "linux/git/git_checkout.md",
+    "linux/git/git_clean.md",
+    "linux/git",
     "notes/wsl/trading_journal_stat1.md",
     "notes/wsl/trading_journal.md",
     "notes/wsl/django_notes_locate.md",
@@ -224,14 +229,9 @@
     "notes/internet",
     "notes/Internet",
     "notes/Pyton",
-    "notes/Linux",
     "pyton/python-guide-ru/02-environment.md",
     "pyton/python-guide-ru/04-workflows.md",
     "pyton/python-guide-ru/03-tools.md",
-    "pyton/python-guide-ru/05-resources.md",
-    "pyton/python-guide/05-resources.md",
-    "pyton/python-guide/04-workflows.md",
-    "pyton/python-guide/03-tools.md",
-    "pyton/python-guide/02-environment.md"
+    "pyton/python-guide-ru/05-resources.md"
   ]
 }
