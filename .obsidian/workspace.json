@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/wsl/trading_journal.md",
-                "mode": "source",
+                "file": "notes/wsl/trading_journal_stat1.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "trading_journal"
+              "title": "trading_journal_stat1"
             }
           }
         ],
@@ -197,8 +197,9 @@
   },
   "active": "2e2468e1f4d442b9",
   "lastOpenFiles": [
-    "notes/wsl/django_notes_locate.md",
     "notes/wsl/trading_journal.md",
+    "notes/wsl/trading_journal_stat1.md",
+    "notes/wsl/django_notes_locate.md",
     "notes/wsl/django_notes.md",
     "notes/wsl",
     "notes/windows/django_notes_windows_wsl_locate.md",
@@ -231,7 +232,6 @@
     "pyton/python-guide/README.md",
     "linux/formatting.md",
     "linux/networking.md",
-    "linux/scp.md",
-    "linux/grep.md"
+    "linux/scp.md"
   ]
 }
