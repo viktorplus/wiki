@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/wsl/trading_journal_stat1.md",
-                "mode": "preview",
+                "file": "linux/git/git_stash.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "trading_journal_stat1"
+              "title": "git_stash"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "подсчет",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -195,10 +195,16 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "2e2468e1f4d442b9",
+  "active": "fc993898698480f2",
   "lastOpenFiles": [
-    "notes/wsl/trading_journal.md",
+    "linux/git",
+    "linux/git/git_ext.md",
+    "linux/git/git_stash.md",
+    "linux/git/git_checkout.md",
+    "linux/git/git.md",
+    "linux/git/gitignore.md",
     "notes/wsl/trading_journal_stat1.md",
+    "notes/wsl/trading_journal.md",
     "notes/wsl/django_notes_locate.md",
     "notes/wsl/django_notes.md",
     "notes/wsl",
@@ -209,7 +215,6 @@
     "linux/bash/cron-jobs.md",
     "notes/linux/django_python_debian_ubuntu.md",
     "pyton/python-guide-ru/README.md",
-    "linux/git.md",
     "pyton/python-guide-ru/01-basics.md",
     "notes/linux/jango_python_debian_ubuntu",
     "notes/python/jango_python_debian_ubuntu",
@@ -227,11 +232,6 @@
     "pyton/python-guide/05-resources.md",
     "pyton/python-guide/04-workflows.md",
     "pyton/python-guide/03-tools.md",
-    "pyton/python-guide/02-environment.md",
-    "pyton/python-guide/01-basics.md",
-    "pyton/python-guide/README.md",
-    "linux/formatting.md",
-    "linux/networking.md",
-    "linux/scp.md"
+    "pyton/python-guide/02-environment.md"
   ]
 }
