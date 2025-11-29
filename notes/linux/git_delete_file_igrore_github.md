@@ -17,3 +17,5 @@
 
 `.gitignore` **не блокирует** ручную загрузку/коммит (в т.ч. через веб-интерфейс GitHub) — он лишь скрывает файлы от `git status`/`git add .`.  
 Если хочешь именно “запрет”, можно сделать проверку (pre-commit hook или GitHub Action), которая будет падать, если в `lesson/` есть `.pdf`.
+
+### git pull origin main --allow-unrelated-histories

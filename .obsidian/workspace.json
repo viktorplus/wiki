@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d4a30a21e4d0e804",
+        "id": "f6afed333936c9fe",
         "type": "tabs",
         "children": [
           {
-            "id": "6d3292bcd4ddd636",
+            "id": "8f38f42b86fe03af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/linux/2025-11-24.md",
+                "file": "lesson/python/PythonFund_L19_dicts_fromkeys_get_setdefault_keys_values_items_nested_dicts_copy_deepcopy_dict_comprehension_comparison_practice_homework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-24"
+              "title": "PythonFund_L19_dicts_fromkeys_get_setdefault_keys_values_items_nested_dicts_copy_deepcopy_dict_comprehension_comparison_practice_homework"
             }
           }
         ]
@@ -180,43 +180,43 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "6d3292bcd4ddd636",
+  "active": "8f38f42b86fe03af",
   "lastOpenFiles": [
-    "lesson/mysql/MySQL_DateTime_CheatSheet.md",
+    "lesson/python/PythonFund_L09_for_loop_iterables_range_nested_loops_break_continue_else_practice_homework.md",
+    "lesson/python/PythonFund_L06_math_modules_float_precision_decimal_rounding_bits_bytes.md",
+    "lesson/python/PythonFund_L19_dicts_fromkeys_get_setdefault_keys_values_items_nested_dicts_copy_deepcopy_dict_comprehension_comparison_practice_homework.md",
+    "lesson/python/PythonFund_L18_dicts_frozenset_set_comprehension_dict_conversion_in_operator_practice_homework.md",
+    "lesson/python/PythonFund_L17_sets_hash_set_operations_relations_methods_practice_homework.md",
+    "lesson/python/PythonFund_L16_list_comprehension_zip_stack_queue_sort_stability_practice_homework.md",
+    "lesson/python/PythonFund_L15_lists_memory_references_nested_collections_del_shallow_deep_copy_practice_homework.md",
+    "lesson/python/PythonFund_L14_list_methods_add_remove_search_count_sort_reverse_sorted_reversed_min_max_sum_practice_homework.md",
+    "lesson/python/PythonFund_L13_tuples_packing_unpacking_starred_unpacking_enumerate_tuple_methods_practice_homework.md",
+    "lesson/python/PythonFund_L12_string_formatting_percent_format_fstrings_number_formatting_alignment_padding.md",
+    "lesson/python/PythonFund_L11_string_methods_predicates_search_case_replace_split_join_strip_practice_homework.md",
+    "lesson/python/PythonFund_L10_lists_intro_creation_indexing_slicing_mutation_ops_conversion_comparison_for.md",
+    "lesson/python/PythonFund_L07_while_loop_break_continue_whileelse_random_practice_homework.md",
+    "lesson/python/PythonFund_L08_strings_encoding_methods_ord_chr_comparison_len_indexing_slices_in.md",
+    "lesson/python/PythonFund_L05_branching_if_elif_else_nested_ternary_match_case.md",
+    "lesson/python/PythonFund_L04_bool_comparisons_logical_ops_truth_table_chained_inequalities.md",
+    "lesson/python/PythonFund_L02_data_types_objects_strings_type_print_sep_end.md",
+    "lesson/python/PythonFund_L03_arithmetic_operators_precedence_type_casting_errors.md",
+    "lesson/python/PythonFund_L01_basics_vars_input_print_pep8.md",
+    "notes/linux/2025-11-24.md",
     "notes/linux/git_delete_file_igrore_github.md",
     "notes/linux/django_python_debian_ubuntu.md",
-    "lesson/mysql/MySQL_1.1_intro_databases_SELECT_FROM.md",
-    "Новый текстовый документ.txt",
-    "gpt/pyton/python-guide-ru/examples/package/__pycache__/__init__.cpython-313.pyc",
-    "gpt/pyton/python-guide-ru/examples/package/__pycache__/utils.cpython-313.pyc",
-    "gpt/pyton/python-guide-ru/examples/package/__pycache__",
-    "gpt/pyton/python-guide-ru/examples/package/__init__.py",
-    "gpt/pyton/python-guide-ru/examples/package/utils.py",
-    "gpt/pyton/python-guide-ru/examples/package",
-    "gpt/pyton/python-guide-ru/examples/run_demo.py",
-    "gpt/pyton/python-guide-ru/examples/hello.py",
-    "gpt/pyton/python-guide-ru/README.md",
-    "gpt/pyton/python-guide-ru/examples",
-    "gpt/pyton/python-guide-ru/05-resources.md",
-    "gpt/pyton/python-guide-ru/04-workflows.md",
-    "gpt/pyton/python-guide-ru/03-tools.md",
-    "gpt/pyton/python-guide-ru/02-environment.md",
-    "gpt/pyton/python-guide-ru/01-basics.md",
-    "gpt/linux/git/git_stash.md",
-    "gpt/linux/git/git_push.md",
-    "gpt/linux/git/git_pull.md",
-    "gpt/linux/git/git_fetch.md",
-    "gpt/linux/git/git_ext.md",
-    "gpt/linux/git/git_commit.md",
-    "gpt/linux/git/git_clean.md",
-    "gpt/linux/git/git_checkout.md",
-    "gpt/linux/git/gitignore.md",
-    "gpt/linux/git/git.md",
-    "gpt/linux/bash/while.md",
-    "gpt/linux/bash/variables.md",
-    "gpt/linux/bash/script-guidelines.md",
-    "gpt/linux/bash/input-output.md",
-    "gpt/linux/bash/if.md",
-    "gpt/linux/bash/functions.md"
+    "lesson/python/Python_Fundamentals_Lesson_1.md",
+    "lesson/python/43/SUMMARY.md",
+    "lesson/python/42/SUMMARY.md",
+    "lesson/python/41/SUMMARY.md",
+    "lesson/python/tools/summarize_pdfs.py",
+    "lesson/python/tools",
+    "lesson/python/43/PD_Python Fund_43.pdf",
+    "lesson/python/43/Не подтвержден 706612.crdownload",
+    "lesson/python/43/PD_Python Fund_LfS43.pdf",
+    "lesson/python/43/Не подтвержден 751670.crdownload",
+    "lesson/python/43",
+    "lesson/python/Новая папка",
+    "lesson/python/42/PD_Python Fund_42.pdf",
+    "lesson/python/42/Не подтвержден 496243.crdownload"
   ]
 }
